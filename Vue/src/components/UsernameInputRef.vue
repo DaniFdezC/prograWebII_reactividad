@@ -2,7 +2,8 @@
     <div class="username-form">
       <label for="username" class="username-label">Nombre de usuario:</label>
       <input type="text" id="username" v-model="username" @input="validateUsername" class="username-input">
-        <!--  Dependiendo de cuántos caracteres se hayan escrito, se le otorga una clase u otra
+        <!--  
+            Dependiendo de cuántos caracteres se hayan escrito, se le otorga una clase u otra
             lo comprobams llamando a la función validateUsername
         -->
       <p :class="{ 'incorrect-username': !isUsernameValid, 'correct-name': isUsernameValid }">
